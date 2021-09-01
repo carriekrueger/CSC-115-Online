@@ -1,6 +1,7 @@
 // Carrie Krueger
 // 2/7/2021
 // This program writes a message to the screen.
+// *Note: do this in your orginal HelloWorld.java file
 
 public class HelloWorldMethod {
     public static void main(String[] args) {
