@@ -22,7 +22,7 @@ public class Ch2Comments {
 
         // GIVE CREDIT
         // If you use someone else's code, use comments to credit them/the source
-        // ex. shamelessy stolen from https://github.com/awesomecoder
+        // ex. shamelessly stolen from https://github.com/awesomecoder
 
         // HOW DO WE MAKE COMMENTS?
 
