@@ -44,7 +44,7 @@ public class IfElse {
         if(num1 < num2) {
             System.out.println("num1 is less!");
         } else {
-            System.out.println("num1 is NOT less!");   // why num2 less?
+            System.out.println("num1 is NOT less!");   // why not num2 less?
         }
 
 
