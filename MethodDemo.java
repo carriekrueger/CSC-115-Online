@@ -1,5 +1,5 @@
 // Carrie Krueger
-// 4-1-21
+// 10-25-22
 // A menu of math to demonstrate methods:
 // Ask the user for two numbers, perform the chosen operation
 // and display the result.
@@ -28,46 +28,50 @@ public class MethodDemo {
         
         System.out.println("Enter number 2:");
         num2 = sc.nextInt();
-        
-        // Display the menu of options
-        // Make a method -- CODE DISPLACER method (it's a void)
-        
+
+        // Display menu of options
+        // The method is a CODE DISPLACER method (it's void) 
+
         showMenu();
-        
-        // Get the user's choice 
-        // Could make another code displacer method (same with above input)
+
+        // get the user's choice
+        // could make another code displacer method (same with above input)
         // but Scanner scope issues
-        
+
         System.out.println("Enter your choice:");
         int choice = sc.nextInt();
-        
-        // do the thing they want to do by calling the appropriate method
-        
-        // Where are the dots?? Don't need dot possession if your method
-        // is DEFINED in the same class where it is CALLED
-        
+
+        // do the thing the user wants to do by calling the appropriate method
+
+        // Where are the dots? Don't need dot possession if your method is 
+        // DEFINED in the same class where is it CALLED
+
         if(choice == 1) {
-            add(num1, num2); // a method that shows how PARAMETERS work
+            add(num1, num2);   // a method that show how PARAMETERS work
         }
+
         if(choice == 2) {
-            divide(num1, num2); // more parameter practice
+            divide(num1, num2);   // more parameters at work
         }
-        if(choice == 3){
-            int answer = square(num1); // returning a value 
-                                         //and saving it to a variable
+
+        if(choice == 3) {
+            // returning a value and saving it to a variable
+            // when you want to do something with the result
+            int answer = square(num1);
             System.out.println(answer);
-            
-            // System.out.println(square(num1)); // return to a print statement
+
+            // System.out.println(square(num1)); // returning to a print statement
         }
+
         if(choice == 4) {
-          //  int answer = exp(num1, num2); // returning to a variable
-          //  System.out.println(answer);
-          
-          System.out.println(exp(num1,num2)); // returning to a print
+            //int answer = exp(num1, num2);  // returning a value and saving it to a variable
+            //System.out.println(answer);
+
+            System.out.println(exp(num1, num2)); // returning to a print statement
         }
-        
+
     }
-    
+
     // This method displays a menu of options
     public static void showMenu() {
         System.out.println("\nPlease choose from the following:");
@@ -75,58 +79,55 @@ public class MethodDemo {
         System.out.println("\t2. Divide the two numbers");
         System.out.println("\t3. Square the first number");
         System.out.println("\t4. Exponentiate the two numbers");
-        
+
         System.out.println();
     }
-    
-    // This method takes two ints and displays the sum
-    // Note: parameters (variables) catch the arguments (values) sent 
-    // in to the method 
+
+    // This method takes to ints and displays the sum
+    // Note: parameters (variables) catch the arguments (values) sent in to the method
+
     public static void add(int a, int b) {
         System.out.println("The sum of " + a + " + " + b + " is " + (a + b));
     }
-    
-    
-    // This method takes two ints and displays the quotient 
+
+    // This method takes two ints and displays the quotient
+
     public static void divide(int a, int b) {
-        if(b == 0){
+        if(b == 0) {
             System.out.println("You can't divide by 0!");
-        } else {
-            System.out.println("The quotient of " + a + " / " + b + " is " + (1.0*a / b));
+        } else  {
+            System.out.println("The quotient of " + a + " / " + b + " is " + (1.0*a / b)); 
+            // int division...
         }
-            
+      
     }
-    
-    // This method takes an int and returns the square of it 
+
+    // This method takes an int and returns the square of it
+
     public static int square(int a) {
         int sqr = a * a;
         return sqr;
-        
-        // OR return a * a; // shorter
-        
+
+        // return a * a;     // shorter
     }
-    
-    // This method takes two ints 
-    // It returns a raised to the b power
+
+    // The method takes two ints.
+    // It returns a raised to the b power.
+
     public static int exp(int a, int b) {
-        // return Math.pow(a, b);  // cheat code... would also need to change 
-                                   // type to double
-                                   
-        // let's write our own!!
-        
+        // return Math.pow(a,b);  // cheat code... would need to change return type to double
+
+        // let's write our own!
+
         int counter = 1;
         int answer = 1;
-        
+
         while(counter <= b) {
             answer *= a;
             counter++;
         }
-        
+
         return answer;
     }
-    
-    
-    
-        
+
 }
-            
