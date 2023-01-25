@@ -5,9 +5,9 @@
 
 public class HelloWorldMethod {
     public static void main(String[] args) {
-        printMessage();
         
-
+        printMessage();
+      
     }
     
     // this method prints a message to the screen 
