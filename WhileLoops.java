@@ -55,7 +55,7 @@ public class WhileLoops {
         }
 
         // INFINITE LOOP OF DOOM (needs an incrementor)
-        // Ctrl+c to escape/break the loop in the terminal?
+        // Ctrl+z to escape/break the loop in the terminal
 
         // Live Code Demos in Brightspace
 
